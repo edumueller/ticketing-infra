@@ -3,9 +3,10 @@
 ## Skaffold config:
 
 - install [skaffold](https://skaffold.dev/)
-- create a `skaffold.yml` file on the project directory (sibling of infra dir).
-- copy the content below
-- run skaffold dev
+- verify the paths referenced on file [skaffold.yml](./skaffold.yml) file on the project directory (sibling of infra dir).
+- create a jwt-secret - see file [auth-depl.yml](./k8s/auth-depl.yml), line 22
+- navigate to this project's dir
+- run `skaffold dev`
 
 ```
 apiVersion: skaffold/v2alpha3
